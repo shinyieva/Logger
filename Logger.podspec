@@ -11,16 +11,9 @@ Pod::Spec.new do |s|
   
   s.author					= { "shinyieva" => "shinyieva@gmail.com" }
   
-  s.source					= { :git => 'git@pdihub.hi.inet:mca/mca-mobile-ios-utils.git',  :branch => 'task/ENJOYGIVEMEFIVE-15675'}
-  
-  s.platform				= :ios
-  
-  s.ios.deployment_target	= '6.0'
-  
-  s.source_files			= 'MCALog/**/*.{h,m}'
-  
-  s.xcconfig				=  { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/MCALog"'}
-  s.xcconfig                = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(CONFIGURATION)=1'}
+  s.source					= { :git => 'git@github.com:shinyieva/Logger.git',  :branch => 'develop'}
+
+  s.source_files			= 'Logger/Logger/**/*.{h,m}'
   
   s.requires_arc			= true
   

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9A004253944AF5BD39CF72 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C818DE3E340AAA09739D7 /* libPods.a */; };
 		A35557CE17F9F5D70050EDC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35557CD17F9F5D70050EDC6 /* Foundation.framework */; };
 		A35557D317F9F5D70050EDC6 /* Logger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A35557D217F9F5D70050EDC6 /* Logger.h */; };
 		A35557D517F9F5D70050EDC6 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = A35557D417F9F5D70050EDC6 /* Logger.m */; };
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5AC569D08C164300A6B1CC5E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		884C818DE3E340AAA09739D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35557CA17F9F5D70050EDC6 /* libLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35557CD17F9F5D70050EDC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A35557D117F9F5D70050EDC6 /* Logger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Logger-Prefix.pch"; sourceTree = "<group>"; };
@@ -53,8 +56,9 @@
 		A35557E517F9F5D70050EDC6 /* LoggerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoggerTests-Info.plist"; sourceTree = "<group>"; };
 		A35557E717F9F5D70050EDC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A35557E917F9F5D70050EDC6 /* LoggerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerTests.m; sourceTree = "<group>"; };
-		A35557F317F9F5EB0050EDC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		A35557F417F9F5FE0050EDC6 /* Logger.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Logger.podspec; sourceTree = "<group>"; };
+		A35557F317F9F5EB0050EDC6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A35557F517F9F7C80050EDC6 /* Logger.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Logger.podspec; path = ../Logger.podspec; sourceTree = "<group>"; };
+		A35557F617F9F9B70050EDC6 /* LogConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A35557CE17F9F5D70050EDC6 /* Foundation.framework in Frameworks */,
+				0B9A004253944AF5BD39CF72 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +88,13 @@
 		A35557C117F9F5D70050EDC6 = {
 			isa = PBXGroup;
 			children = (
-				A35557F417F9F5FE0050EDC6 /* Logger.podspec */,
+				A35557F517F9F7C80050EDC6 /* Logger.podspec */,
 				A35557F317F9F5EB0050EDC6 /* Podfile */,
 				A35557CF17F9F5D70050EDC6 /* Logger */,
 				A35557E317F9F5D70050EDC6 /* LoggerTests */,
 				A35557CC17F9F5D70050EDC6 /* Frameworks */,
 				A35557CB17F9F5D70050EDC6 /* Products */,
+				5AC569D08C164300A6B1CC5E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +113,7 @@
 				A35557CD17F9F5D70050EDC6 /* Foundation.framework */,
 				A35557DB17F9F5D70050EDC6 /* XCTest.framework */,
 				A35557DE17F9F5D70050EDC6 /* UIKit.framework */,
+				884C818DE3E340AAA09739D7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 				A35557D217F9F5D70050EDC6 /* Logger.h */,
 				A35557D417F9F5D70050EDC6 /* Logger.m */,
 				A35557D017F9F5D70050EDC6 /* Supporting Files */,
+				A35557F617F9F9B70050EDC6 /* LogConstants.h */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -154,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A35557ED17F9F5D70050EDC6 /* Build configuration list for PBXNativeTarget "Logger" */;
 			buildPhases = (
+				D59C890792924C7D9BD1403A /* Check Pods Manifest.lock */,
 				A35557C617F9F5D70050EDC6 /* Sources */,
 				A35557C717F9F5D70050EDC6 /* Frameworks */,
 				A35557C817F9F5D70050EDC6 /* CopyFiles */,
+				40E7FC78DEA247DBB4AA54E4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +232,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40E7FC78DEA247DBB4AA54E4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59C890792924C7D9BD1403A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A35557C617F9F5D70050EDC6 /* Sources */ = {
@@ -334,6 +377,7 @@
 		};
 		A35557EE17F9F5D70050EDC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC569D08C164300A6B1CC5E /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Logger.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -346,6 +390,7 @@
 		};
 		A35557EF17F9F5D70050EDC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC569D08C164300A6B1CC5E /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Logger.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -413,6 +458,7 @@
 				A35557EF17F9F5D70050EDC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35557F017F9F5D70050EDC6 /* Build configuration list for PBXNativeTarget "LoggerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +467,7 @@
 				A35557F217F9F5D70050EDC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

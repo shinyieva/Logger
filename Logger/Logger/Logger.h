@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LogConstants.h"
 
-@interface Logger : NSObject
+#ifdef Release
+static const int ddLogLevel = LOG_LEVEL_ERROR;
+#else
+static const int ddLogLevel = LOG_LEVEL_DEBUG;
+#endif
+
+@interface Logger : NSObject <DDLogFormatter>
+
+- (void)configureLogger;
+
++ (Logger *)sharedInstance;
 
 @end
