@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
 
   s.source_files			= 'Logger/Logger/**/*.{h,m}'
   
+  s.resource                = 'LogColors.plist'
+  
   s.requires_arc			= true
   
   s.framework				= 'Foundation'

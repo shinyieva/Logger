@@ -45,6 +45,7 @@
 /* Begin PBXFileReference section */
 		5AC569D08C164300A6B1CC5E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		884C818DE3E340AAA09739D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31631471832A05A00591072 /* LogColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LogColors.plist; sourceTree = "<group>"; };
 		A35557CA17F9F5D70050EDC6 /* libLogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35557CD17F9F5D70050EDC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A35557D117F9F5D70050EDC6 /* Logger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Logger-Prefix.pch"; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		A35557C117F9F5D70050EDC6 = {
 			isa = PBXGroup;
 			children = (
+				A31631471832A05A00591072 /* LogColors.plist */,
 				A35557F517F9F7C80050EDC6 /* Logger.podspec */,
 				A35557F317F9F5EB0050EDC6 /* Podfile */,
 				A35557CF17F9F5D70050EDC6 /* Logger */,

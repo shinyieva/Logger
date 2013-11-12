@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>fatal</key>
+        <string>#681E7E</string>
+        <key>error</key>
+        <string>#D82735</string>
+        <key>warning</key>
+        <string>#FF7435</string>
+        <key>notice</key>
+        <string>#000000</string>
+        <key>info</key>
+        <string>#009E47</string>
+        <key>debug</key>
+        <string>#0079E7</string>
+    </dict>
+</plist>
