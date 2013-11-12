@@ -45,44 +45,6 @@
     
     [self _configureLogColor];
     
-    //Define purple color for fatal (wtf) level
-    UIColor *purpleColor = [UIColor colorWithRed:(104/255.0)
-                                           green:(30/255.0)
-                                            blue:(126/255.0)
-                                           alpha:1.0];
-    
-    
-    //Define red color for error level
-    UIColor *redColor = [UIColor colorWithRed:(216/255.0)
-                                        green:(39/255.0)
-                                         blue:(53/255.0)
-                                        alpha:1.0];
-    
-    
-    //Define orange color for warning level
-    UIColor *orangeColor = [UIColor colorWithRed:(255/255.0)
-                                           green:(116/255.0)
-                                            blue:(53/255.0)
-                                           alpha:1.0];
-    
-    
-    //Define blue color for notice level
-    UIColor *blueColor = [UIColor colorWithRed:(0/255.0)
-                                         green:(121/255.0)
-                                          blue:(231/255.0)
-                                         alpha:1.0];
-    
-    
-    //Define green color for info level
-    UIColor *greenColor = [UIColor colorWithRed:(0/255.0)
-                                          green:(158/255.0)
-                                           blue:(71/255.0)
-                                          alpha:1.0];
-    
-    
-    //Define black color for debug level
-    
-    
     //Log statements will be sent to the Xcode console
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [DDLog addLogger:[DDASLLogger sharedInstance]];
