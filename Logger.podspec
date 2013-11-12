@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files			= 'Logger/Logger/**/*.{h,m}'
   
-  s.resource                = 'LogColors.plist'
+  s.resource                = 'Logger/LogColors.plist'
   
   s.requires_arc			= true
   
